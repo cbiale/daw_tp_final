@@ -9,7 +9,7 @@ El sistema permite controlar el apagado y encendido de dispositivos, existiendo 
 - persianas
 
 
-Tabla De contenidos:
+Tabla de contenidos:
 =========================
 * [Correr la aplicación](#Correr-la-aplicación)  
 * [Detener la aplicación](#Detener-la-aplicación)
