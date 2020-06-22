@@ -55,7 +55,7 @@ Para obtener un detalle de lo necesario para correr la aplicación dirijase al s
 
 ### Consideraciones sobre datos recibidos
 
-En `GET /devices` puede recibir un argumento `filter` que puede tomar los siguientes valores"
+En `GET /devices` puede recibir un argumento `filter` que puede tomar los siguientes valores:
 - 0 :  filtrar por lamparas.
 - 1 :  filtrar por persianas.
 
