@@ -18,6 +18,7 @@ Tabla de contenidos:
     * [Consideraciones sobre datos recibidos](#Consideraciones-sobre-datos-recibidos)
     * [Ejemplo de formatos de retorno](#Ejemplo-de-formatos-de-retorno)    
 * [Contribuir](#Contribuir)
+* [Notas sobre lo subido](#Notas-sobre-lo-subido)
 * [Licencia](#Licencia)
 
 
@@ -86,6 +87,20 @@ En `POST /devices` recibe un JSON de formato Estado.
 ## Contribuir
 
 Para contribuir realizar un pull request con las sugerencias.
+
+## Notas sobre lo subido
+
+Dado que se generaba un error al ejecutar:
+
+```
+git push -u origin master
+```
+
+He ejecutado el mismo como superusuario:
+
+```
+sudo git push -u origin master
+```
 
 ## Licencia
 
