@@ -1,0 +1,28 @@
+* MySQL.
+	* Nombre de la imagen: mysql:5.7
+	* Nombre contenedor: mysql-server
+	* Network: mysql-net
+	* Variables de entorno: MYSQL_ROOT_PASSWORD: userpass
+	* Volumenes:
+	        * ​ ./db/dumps:/docker-entrypoint-initdb.d
+        	* ​ ./db/data:/var/lib/mysql
+
+* Node App.
+	* Nombre de la imagen: abassi/nodejs-server:10.0-dev
+	* Nombre contenedor: nodejs-container
+	* Network: mysql-net
+	* Puertos: "8000:3000"
+	* Volumenes: .  : /home/node/app
+	* Comando:  nodemon ws/index.js
+
+* PHPMyAdmin.
+	* Nombre de la imagen: phpmyadmin/phpmyadmin
+	* Nombre contenedor: phpmyadmin
+	* Network: mysql-net
+	* Variables de entorno: PMA_HOST = mysql-server
+	* Puertos: "8085:80"
+
+NOTAS
+
+* Si se va a ajecutar en docker compose aparte se debe especificar que Node App y PHPMyAdmin dependen de MySQL.
+* Detalle basado principalmente en datos de docker compose.

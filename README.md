@@ -1,19 +1,86 @@
-Autor: Claudio Omar Biale - 2020
+Autor:  Claudio Omar Biale - 2020
 
-# Introduccion
+# Introducción
 
-El proyecto es ...
+El proyecto corresponde al trabajo final de la asignatura **Desarrollo de Aplicaciones Web** de la *Especialización en Internet de las Cosas* dictada en la *Facultad de Ingenieria* de la *Universidad de Buenos Aires*.
 
-# Correr la aplicación
+El sistema permite controlar el apagado y encendido de dispositivos, existiendo dos tipos de dispositivos:
+- lampararas y
+- persianas
 
-Para correr la aplicación es necesario ejecutar el siguiente comando:
+
+Tabla De contenidos:
+=========================
+* [Correr la aplicación](#Correr-la-aplicación)  
+* [Detener la aplicación](#Detener-la-aplicación)
+* [API](#API)
+    * [Ejemplo de formatos de retorno](#Ejemplo-de-formatos-de-retorno)
+    * [Consideraciones sobre datos recibidos](#Consideraciones-sobre-datos-recibidos)
+* [Contribuir](#Contribuir)
+* [Licencia](#Licencia)
+
+
+
+## Correr la aplicación
+
+Para correr la aplicación es necesario descargar el repositorio y luego ejecutar el siguiente comando:
+
 ```sh
-command_to_run
+docker-compose up
 ```
-# Contribuir
+
+## Detener la aplicación
+
+Para detener la aplicación es necesario ejecutar el siguiente comando:
+
+```sh
+docker-compose down
+```
+
+También es posible realizar `Ctrl-C` desde el shell donde se encuentra corriendo el sistema.
+
+## API
+
+|Método | Punto Final |  Uso | Recibe | Retorna |
+| ---- | ---- | ---- | ---- | ---- |---- |
+| GET | /devices | Obtiene los dispositivos existentes | Filtro | Dispositivos |
+| GET | /devices/{id} | Obtiene datos de un dispositivo | - | Dispositivo |
+| POST | /devices | Cambia el estado de un dispositivo | Estado | Estado |
+
+### Consideraciones sobre datos recibidos
+
+En `GET /devices` puede recibir un argumento `filter` que puede tomar los siguientes valores"
+- 0 :  filtrar por lamparas.
+- 1 :  filtrar por persianas.
+
+En `POST /devices` recibe un JSON de formato Estado.
+
+### Ejemplo de formatos de retorno:
+
+- Dispositivo:
+
+    ```
+    {
+        "id":4,
+        "name":"Persiana 1",
+        "description":"Persiana living",
+        "state":0,
+        "type":1
+    }
+    ```
+- Estado:
+
+    ```
+    {
+        "id":"dev_4",
+        "state":true
+    }
+    ```
+
+## Contribuir
 
 Para contribuir realizar un pull request con las sugerencias.
 
-# Licencia
+## Licencia
 
 GPL
