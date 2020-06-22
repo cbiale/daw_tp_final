@@ -13,6 +13,7 @@ Tabla De contenidos:
 =========================
 * [Correr la aplicación](#Correr-la-aplicación)  
 * [Detener la aplicación](#Detener-la-aplicación)
+* [Notas sobre la aplicación](#notas-sobre-la-aplicación)
 * [API](#API)
     * [Consideraciones sobre datos recibidos](#Consideraciones-sobre-datos-recibidos)
     * [Ejemplo de formatos de retorno](#Ejemplo-de-formatos-de-retorno)    
@@ -38,6 +39,11 @@ docker-compose down
 ```
 
 También es posible realizar `Ctrl-C` desde el shell donde se encuentra corriendo el sistema.
+
+## Notas sobre la aplicación
+
+Para obtener un detalle de lo necesario para correr la aplicación dirijase al siguiente enlace:
+[notas](doc/notes.txt)
 
 ## API
 
