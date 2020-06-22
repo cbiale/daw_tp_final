@@ -14,8 +14,8 @@ Tabla De contenidos:
 * [Correr la aplicación](#Correr-la-aplicación)  
 * [Detener la aplicación](#Detener-la-aplicación)
 * [API](#API)
-    * [Ejemplo de formatos de retorno](#Ejemplo-de-formatos-de-retorno)
     * [Consideraciones sobre datos recibidos](#Consideraciones-sobre-datos-recibidos)
+    * [Ejemplo de formatos de retorno](#Ejemplo-de-formatos-de-retorno)    
 * [Contribuir](#Contribuir)
 * [Licencia](#Licencia)
 
