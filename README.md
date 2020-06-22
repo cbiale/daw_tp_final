@@ -1,4 +1,4 @@
-Autor:  Claudio Omar Biale - 2020
+# Autor:  Claudio Omar Biale - 2020
 
 # Introducción
 
@@ -41,7 +41,7 @@ También es posible realizar `Ctrl-C` desde el shell donde se encuentra corriend
 
 ## API
 
-|Método | Punto Final |  Uso | Recibe | Retorna |
+| Método | Punto Final |  Uso | Recibe | Retorna |
 | ---- | ---- | ---- | ---- | ---- |---- |
 | GET | /devices | Obtiene los dispositivos existentes | Filtro | Dispositivos |
 | GET | /devices/{id} | Obtiene datos de un dispositivo | - | Dispositivo |
