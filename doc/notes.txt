@@ -4,8 +4,8 @@
 	* Network: mysql-net
 	* Variables de entorno: MYSQL_ROOT_PASSWORD: userpass
 	* Volumenes:
-	        * ​ ./db/dumps:/docker-entrypoint-initdb.d
-        	* ​ ./db/data:/var/lib/mysql
+	        * ./db/dumps:/docker-entrypoint-initdb.d
+        	* ./db/data:/var/lib/mysql
 
 * Node App.
 	* Nombre de la imagen: abassi/nodejs-server:10.0-dev
